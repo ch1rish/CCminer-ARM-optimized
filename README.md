@@ -10,6 +10,7 @@
  Official Orange Pi 5 Ubuntu Jammy Server image --> https://drive.google.com/drive/folders/1i5zQOg1GIA4_VNGikFl2nPM0Y2MBw2M0?usp=share_link
 
  Make sure it's updated
+ 
 sudo apt-get update -y && sudo apt-get --with-new-pkgs upgrade -y && sudo apt autoremove -y && sudo reboot
 
 Git and Build Process:
