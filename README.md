@@ -15,18 +15,6 @@ sudo apt-get install -y libllvm-16-ocaml-dev libllvm16 llvm-16 llvm-16-dev llvm-
 sudo ln -sf /usr/lib/llvm-16/bin/clang-16 /usr/bin/clang
 sudo ln -sf /usr/lib/llvm-16/bin/clang++ /usr/bin/clang++
 
-mkdir $HOME/opt && cd $HOME/opt
-wget https://www.openssl.org/source/openssl-1.1.1o.tar.gz
-tar -zxvf openssl-1.1.1o.tar.gz
-cd openssl-1.1.1o
-./config && make && make test
-mkdir -p $HOME/opt/lib/
-mv $HOME/opt/openssl-1.1.1o/libcrypto.so.1.1 $HOME/opt/lib/
-mv $HOME/opt/openssl-1.1.1o/libssl.so.1.1 $HOME/opt/lib/
-export LD_LIBRARY_PATH=$HOME/opt/lib:$LD_LIBRARY_PATH
-echo 'export LD_LIBRARY_PATH=$HOME/opt/lib:$LD_LIBRARY_PATH' >> ~/.bashrc
-cd ~
-
 git clone https://github.com/ch1rish/CCminer-ARM-optimized.git
 cd CCminer-ARM-optimized
 chmod +x build.sh
