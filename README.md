@@ -1,13 +1,13 @@
 # ccminer for ARM (cortex-a55) (Orange Pi 5 rk3588s)
 
-# Based on https://github.com/monkins1010/ccminer/tree/ARM
+ Based on https://github.com/monkins1010/ccminer/tree/ARM
 
 # Instructions for Orange Pi 5 4gb base model
-# Start with One of the following images:
-# Ubuntu 22.04.3 Joshua-Riek's image --> https://github.com/Joshua-Riek/ubuntu-rockchip/releases/download/v1.23/ubuntu-22.04.3-preinstalled-server-arm64-orangepi-5.img.xz
-# Official Orange Pi 5 Ubuntu Jammy Server image --> https://drive.google.com/drive/folders/1i5zQOg1GIA4_VNGikFl2nPM0Y2MBw2M0?usp=share_link
+ Start with One of the following images:
+ Ubuntu 22.04.3 Joshua-Riek's image --> https://github.com/Joshua-Riek/ubuntu-rockchip/releases/download/v1.23/ubuntu-22.04.3-preinstalled-server-arm64-orangepi-5.img.xz
+ Official Orange Pi 5 Ubuntu Jammy Server image --> https://drive.google.com/drive/folders/1i5zQOg1GIA4_VNGikFl2nPM0Y2MBw2M0?usp=share_link
 
-# Make sure it's updated
+ Make sure it's updated
 sudo apt-get update -y && sudo apt-get --with-new-pkgs upgrade -y && sudo apt autoremove -y && sudo reboot
 
 Git and Build Process:
